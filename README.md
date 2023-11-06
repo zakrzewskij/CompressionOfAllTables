@@ -6,6 +6,39 @@ This PowerShell script, named `CompressAllTables`, is designed to compress all t
 
 1. **Run the Script:**
     - Execute the script `CompressAllTables.ps1`.
+    - The script will prompt you for the folder path, SQL Server instance name, and other optional parameters.
+
+    ```powershell
+    .\CompressAllTables.ps1
+    ```
+
+2. **Specify SQL Server Instance:**
+    - Run the script and specify the SQL Server instance name.
+
+    ```powershell
+    .\CompressAllTables.ps1 -SqlServerName "MySqlServerInstance"
+    ```
+
+3. **Specify CSV Delimiter:**
+    - Run the script and specify a custom CSV delimiter.
+
+    ```powershell
+    .\CompressAllTables.ps1 -Delimiter ","
+    ```
+
+4. **Specify Folder Path:**
+    - Run the script and specify a custom folder path.
+
+    ```powershell
+    .\CompressAllTables.ps1 -Path "C:\Custom\Folder\Path\"
+    ```
+
+5. **Combine Different Options:**
+    - Combine different options to customize the script's behavior.
+
+    ```powershell
+    .\CompressAllTables.ps1 -SqlServerName "MySqlServerInstance" -Path "C:\Custom\Folder\Path\" -Delimiter ","
+    ```
 
 ### Functions
 
